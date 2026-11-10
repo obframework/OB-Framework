@@ -40,7 +40,8 @@ plantacoes, venda de drogas, evidencias, lavagem de dinheiro e roubos.
    `CFX_KEY`, `LOGIN`, `SENHA`, `HOST`, `NOME_DO_BANCO` e `FIVEMANAGE_KEY`.
 3. Configure `SEU_IDENTIFICADOR` e os demais indicadores do `server.cfg`.
 4. Importe ou deixe os recursos criarem o esquema de banco exigido.
-5. Baixe o repositorio de imagens e publique seu conteudo no caminho `/orbis/`.
+5. Baixe o repositorio de imagens e publique seu conteudo em qualquer pasta ou
+   dominio acessivel por HTTP/HTTPS.
 6. Inicie pelo `server.cfg` e acompanhe o console na primeira inicializacao.
 
 ## Imagens obrigatorias
@@ -50,9 +51,11 @@ framework fique com mais de 2 GB. Baixe-os em:
 
 **[OB-Framework-Imagens](https://github.com/obframework/OB-Framework-Imagens)**
 
-O conteudo desse repositorio deve ser servido por HTTP/HTTPS sob `/orbis/`.
-Sem ele, veiculos, itens, roupas e outras imagens das interfaces podem ficar
-ausentes.
+O nome da pasta base nao e obrigatorio. Ela pode ser `/`, `/assets/`,
+`/ob-framework/` ou qualquer outro caminho. Preserve dentro dela as subpastas
+`icons/`, `cars/`, `creator/`, `barbershop/`, `skinshop/` e `tattoos/`, e ajuste
+as URLs base nas configuracoes dos respectivos recursos. Sem esses assets,
+veiculos, itens, roupas e outras imagens das interfaces podem ficar ausentes.
 
 ## Seguranca
 
