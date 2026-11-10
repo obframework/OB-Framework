@@ -48,7 +48,7 @@ plantacoes, venda de drogas, evidencias, lavagem de dinheiro e roubos.
 Os assets das interfaces foram separados para evitar que o repositorio da
 framework fique com mais de 2 GB. Baixe-os em:
 
-**[OB-Framework-Imagens](../OB-Framework-Imagens)**
+**[OB-Framework-Imagens](https://github.com/obframework/OB-Framework-Imagens)**
 
 O conteudo desse repositorio deve ser servido por HTTP/HTTPS sob `/orbis/`.
 Sem ele, veiculos, itens, roupas e outras imagens das interfaces podem ficar
@@ -63,7 +63,7 @@ reais de banco. Para producao, mantenha os valores privados fora do Git.
 ## Versao Legacy
 
 Para GTA V Legacy, use o repositorio
-**[OB-Framework-Legacy](../OB-Framework-Legacy)**.
+**[OB-Framework-Legacy](https://github.com/obframework/OB-Framework-Legacy)**.
 
 ## Licencas
 
