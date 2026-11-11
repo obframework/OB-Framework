@@ -39,7 +39,10 @@ plantacoes, venda de drogas, evidencias, lavagem de dinheiro e roubos.
 2. Copie `server.private.cfg.example` para `server.private.cfg` e substitua os indicadores, como
    `CFX_KEY`, `LOGIN`, `SENHA`, `HOST`, `NOME_DO_BANCO` e `FIVEMANAGE_KEY`.
 3. Configure `SEU_IDENTIFICADOR` e os demais indicadores do `server.cfg`.
-4. Importe ou deixe os recursos criarem o esquema de banco exigido.
+4. Importe `database/ob.sql` em um banco vazio. Esse arquivo inclui o esquema e
+   configuracoes iniciais reutilizaveis, como blips, lojas, garagens, portas,
+   rotas e organizacoes. Ele foi higienizado e nao contem contas, personagens,
+   membros de organizacoes, inventarios, logs ou identificadores de jogadores.
 5. Baixe o repositorio de imagens e publique seu conteudo em qualquer pasta ou
    dominio acessivel por HTTP/HTTPS.
 6. Inicie pelo `server.cfg` e acompanhe o console na primeira inicializacao.
@@ -56,6 +59,14 @@ O nome da pasta base nao e obrigatorio. Ela pode ser `/`, `/assets/`,
 `icons/`, `cars/`, `creator/`, `barbershop/`, `skinshop/` e `tattoos/`, e ajuste
 as URLs base nas configuracoes dos respectivos recursos. Sem esses assets,
 veiculos, itens, roupas e outras imagens das interfaces podem ficar ausentes.
+
+## Banco de dados inicial
+
+O arquivo `database/ob.sql` e uma copia publica higienizada do banco usado no
+desenvolvimento. Importe-o somente em um banco vazio e confira o nome do banco
+no inicio do arquivo antes de executar. Cadastros individuais de jogadores e
+dados operacionais foram removidos; ficaram apenas a estrutura e configuracoes
+reutilizaveis.
 
 ## Seguranca
 
